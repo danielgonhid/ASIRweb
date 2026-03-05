@@ -4,9 +4,9 @@ Este repositorio es un entorno de experimentación técnica, centrado en el desp
 
 ## Objetivo del proyecto 🎯
 El propósito principal de este repositorio es la experimentación propia y validación de conceptos de **ASIR** aplicados al desarrollo web y DevOps:
--**CI/CD**: Automatización de despliegue mediante Github Pages.
--**Control de versiones**: Gestión de ramas, commits y resolución de conflictos.
--**Arquitectura de información**: Organización jerárquica de archivos para entornos de producción.
+- **CI/CD**: Automatización de despliegue mediante Github Pages.
+- **Control de versiones**: Gestión de ramas, commits y resolución de conflictos.
+- **Arquitectura de información**: Organización jerárquica de archivos para entornos de producción.
 
 > **NOTA SOBRE CONTENIDO**: Son apuntes 100% reales, pero los HTML en sí son generados con IA (Claude + Gemini).
 
