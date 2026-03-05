@@ -11,12 +11,12 @@ El propósito principal de este repositorio es la experimentación propia y vali
 > **NOTA SOBRE CONTENIDO**: Son apuntes 100% reales, pero los HTML en sí son generados con IA (Claude + Gemini).
 
 ## Stack tecnológico 👨‍💻
--**Hosting**: Github Pages.
--**Lenguajes**: HTML5 / CSS3.
--**Control de versiones**: Git / VS Code.
+- **Hosting**: Github Pages.
+- **Lenguajes**: HTML5 / CSS3.
+- **Control de versiones**: Git / VS Code.
 
 ## Hoja de ruta 🔎
--[X] Despliegue inicial de página "en obras".
--[ ] Implementación de la estructura modular por asignaturas.
--[ ] Experimentación con **GitHub Actions** para validación del código.
--[ ] Pruebas de integración con dominios personalizados y certificados SSL.
+- [X] Despliegue inicial de página "en obras".
+- [ ] Implementación de la estructura modular por asignaturas.
+- [ ] Experimentación con **GitHub Actions** para validación del código.
+- [ ] Pruebas de integración con dominios personalizados y certificados SSL.
