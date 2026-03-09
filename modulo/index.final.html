@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>1º ASIR — Portal de Módulos</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --bg:#090c14;--surface:#0f1421;--card:#141929;--border:#1e2640;--border2:#252d48;
+  --text:#e2e8f0;--muted:#64748b;--accent:#38bdf8;--accent2:#0284c7;
+  --linux:#22d3a5;--linux-d:#0d3d30;
+  --win:#60a5fa;--win-d:#0f2550;
+  --virt:#a78bfa;--virt-d:#2a1f4a;
+  --warn:#fbbf24;--danger:#f87171;--success:#4ade80;
+  --r:10px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Lexend',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  min-height:100vh;
+  font-size:14px;
+  overflow-x:hidden;
+}
+
+/* ── GRID DE FONDO ── */
+body::before {
+  content:'';
+  position:fixed;
+  inset:0;
+  background-image:
+    linear-gradient(rgba(56,189,248,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56,189,248,.03) 1px, transparent 1px);
+  background-size:40px 40px;
+  pointer-events:none;
+  z-index:0;
+}
+
+/* ── HEADER ── */
+header {
+  position:relative;
+  z-index:1;
+  border-bottom:1px solid var(--border);
+  background:var(--surface);
+  padding:36px 48px 32px;
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:20px;
+}
+.header-left .eyebrow {
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:.15em;
+  color:var(--muted);
+  text-transform:uppercase;
+  margin-bottom:10px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.header-left .eyebrow::before {
+  content:'';
+  display:inline-block;
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:var(--success);
+  box-shadow:0 0 8px var(--success);
+}
+header h1 {
+  font-size:32px;
+  font-weight:700;
+  line-height:1.15;
+  letter-spacing:-.02em;
+}
+header h1 span { color:var(--accent); }
+header h1 .dim { color:var(--muted); font-weight:300; }
+.header-right {
+  text-align:right;
+  flex-shrink:0;
+}
+.header-right .stat-label {
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  color:var(--muted);
+  margin-bottom:4px;
+}
+.header-right .stat-val {
+  font-family:'JetBrains Mono',monospace;
+  font-size:28px;
+  font-weight:600;
+  color:var(--accent);
+  line-height:1;
+}
+.header-right .stat-sub {
+  font-size:11px;
+  color:var(--muted);
+  margin-top:4px;
+}
+
+/* ── MAIN ── */
+main {
+  position:relative;
+  z-index:1;
+  max-width:1100px;
+  margin:0 auto;
+  padding:40px 48px 60px;
+}
+
+/* ── SECCIÓN LABEL ── */
+.section-label {
+  font-size:11px;
+  font-weight:600;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  margin-bottom:20px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.section-label::after {
+  content:'';
+  flex:1;
+  height:1px;
+  background:var(--border);
+}
+
+/* ── GRID DE MÓDULOS ── */
+.modules-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+  gap:12px;
+}
+
+/* ── TARJETA DE MÓDULO ── */
+.module-card {
+  display:block;
+  text-decoration:none;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:20px 22px;
+  transition:border-color .2s, box-shadow .2s, transform .15s, background .2s;
+  position:relative;
+  overflow:hidden;
+  cursor:pointer;
+}
+.module-card::before {
+  content:'';
+  position:absolute;
+  top:0; left:0;
+  width:3px; height:100%;
+  background:var(--card-accent, var(--accent));
+  opacity:0;
+  transition:opacity .2s;
+}
+.module-card:hover {
+  border-color:var(--border2);
+  box-shadow:0 4px 24px rgba(0,0,0,.4);
+  transform:translateY(-2px);
+  background:#17203a;
+}
+.module-card:hover::before { opacity:1; }
+.module-card:hover .card-arrow { opacity:1; transform:translateX(0); }
+
+.card-top {
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  margin-bottom:14px;
+}
+.card-icon {
+  width:40px;
+  height:40px;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:20px;
+  flex-shrink:0;
+  background:var(--card-icon-bg, rgba(56,189,248,.1));
+}
+.card-arrow {
+  font-size:16px;
+  color:var(--muted);
+  opacity:0;
+  transform:translateX(-4px);
+  transition:opacity .2s, transform .2s;
+  margin-top:2px;
+}
+
+.card-code {
+  font-family:'JetBrains Mono',monospace;
+  font-size:10px;
+  letter-spacing:.1em;
+  color:var(--muted);
+  text-transform:uppercase;
+  margin-bottom:5px;
+}
+.card-title {
+  font-size:15px;
+  font-weight:600;
+  color:var(--text);
+  line-height:1.35;
+  margin-bottom:8px;
+}
+.card-desc {
+  font-size:12px;
+  color:var(--muted);
+  line-height:1.6;
+}
+.card-footer {
+  margin-top:14px;
+  padding-top:12px;
+  border-top:1px solid var(--border);
+  display:flex;
+  align-items:center;
+  gap:6px;
+  flex-wrap:wrap;
+}
+.card-tag {
+  font-size:10px;
+  padding:2px 8px;
+  border-radius:4px;
+  font-weight:600;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+.card-status {
+  margin-left:auto;
+  font-family:'JetBrains Mono',monospace;
+  font-size:10px;
+  color:var(--muted);
+  display:flex;
+  align-items:center;
+  gap:5px;
+}
+.card-status.ready { color:var(--success); }
+.card-status.ready::before {
+  content:'';
+  width:5px; height:5px;
+  border-radius:50%;
+  background:var(--success);
+  display:inline-block;
+}
+.card-status.wip::before {
+  content:'';
+  width:5px; height:5px;
+  border-radius:50%;
+  background:var(--warn);
+  display:inline-block;
+}
+.card-status.wip { color:var(--warn); }
+
+/* Colores por módulo */
+.mod-iso  { --card-accent:#38bdf8; --card-icon-bg:rgba(56,189,248,.1); }
+.mod-redes{ --card-accent:#22d3a5; --card-icon-bg:rgba(34,211,165,.1); }
+.mod-gbd  { --card-accent:#a78bfa; --card-icon-bg:rgba(167,139,250,.1); }
+.mod-fh   { --card-accent:#fb923c; --card-icon-bg:rgba(251,146,60,.1); }
+.mod-lm   { --card-accent:#f472b6; --card-icon-bg:rgba(244,114,182,.1); }
+.mod-sost { --card-accent:#4ade80; --card-icon-bg:rgba(74,222,128,.1); }
+.mod-dig  { --card-accent:#fbbf24; --card-icon-bg:rgba(251,191,36,.1); }
+.mod-ipe  { --card-accent:#60a5fa; --card-icon-bg:rgba(96,165,250,.1); }
+
+/* Tag colors */
+.t-so   { background:#0c1e30; color:#38bdf8; }
+.t-redes{ background:var(--linux-d); color:var(--linux); }
+.t-bd   { background:var(--virt-d); color:var(--virt); }
+.t-hw   { background:#2a1500; color:#fb923c; }
+.t-web  { background:#2a0a1a; color:#f472b6; }
+.t-soft { background:#0a2010; color:#4ade80; }
+.t-tech { background:#1f1600; color:var(--warn); }
+.t-emp  { background:var(--win-d); color:var(--win); }
+
+/* ── FOOTER ── */
+footer {
+  position:relative;
+  z-index:1;
+  border-top:1px solid var(--border);
+  padding:18px 48px;
+  background:var(--surface);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  font-size:11.5px;
+  color:var(--muted);
+}
+footer span { color:var(--success); }
+
+/* ── ANIMACIÓN ENTRADA ── */
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(16px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+.module-card {
+  animation:fadeUp .4s ease both;
+}
+.module-card:nth-child(1){animation-delay:.05s}
+.module-card:nth-child(2){animation-delay:.10s}
+.module-card:nth-child(3){animation-delay:.15s}
+.module-card:nth-child(4){animation-delay:.20s}
+.module-card:nth-child(5){animation-delay:.25s}
+.module-card:nth-child(6){animation-delay:.30s}
+.module-card:nth-child(7){animation-delay:.35s}
+.module-card:nth-child(8){animation-delay:.40s}
+
+header {
+  animation:fadeUp .35s ease both;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <div class="eyebrow">1º ASIR · Curso 25-26</div>
+    <h1>Portal de <span>Módulos</span><br><span class="dim">Administración de Sistemas Informáticos en Red</span></h1>
+  </div>
+  <div class="header-right">
+    <div class="stat-label">Módulos este curso</div>
+    <div class="stat-val">08</div>
+    <div class="stat-sub">1er año del ciclo</div>
+  </div>
+</header>
+
+<main>
+  <div class="section-label">Selecciona un módulo</div>
+
+  <div class="modules-grid">
+
+    <!-- ISO -->
+    <a href="modulos/iso.html" class="module-card mod-iso">
+      <div class="card-top">
+        <div class="card-icon">🖥️</div>
+        <div class="card-arrow">→</div>
+      </div>
+      <div class="card-code">MP01 · ISO</div>
+      <div class="card-title">Implantación de Sistemas Operativos</div>
+      <div class="card-desc">Instalación, configuración y administración de Linux y Windows Server. Virtualización con VirtualBox y Proxmox.</div>
+      <div class="card-footer">
+        <span class="card-tag t-so">Linux</span>
+        <span class="card-tag t-so">Windows</span>
+        <div class="card-status ready">Con apuntes</div>
+      </div>
+    </a>
+
+    <!-- REDES -->
+    <a href="modulos/redes.html" class="module-card mod-redes">
+      <div class="card-top">
+        <div class="card-icon">🌐</div>
+        <div class="card-arrow">→</div>
+      </div>
+      <div class="card-code">MP02 · REDES</div>
+      <div class="card-title">Redes</div>
+      <div class="card-desc">Fundamentos de comunicaciones, modelo OSI/TCP-IP, direccionamiento IP, subnetting y configuración de dispositivos de red.</div>
+      <div class="card-footer">
+        <span class="card-tag t-redes">TCP/IP</span>
+        <span class="card-tag t-redes">Routing</span>
+        <div class="card-status wip">En progreso</div>
+      </div>
+    </a>
+
+    <!-- GBD -->
+    <a href="modulos/gbd.html" class="module-card mod-gbd">
+      <div class="card-top">
+        <div class="card-icon">🗄️</div>
+        <div class="card-arrow">→</div>
+      </div>
+      <div class="card-code">MP03 · GBD</div>
+      <div class="card-title">Gestión de Bases de Datos</div>
+      <div class="card-desc">Diseño relacional, SQL, administración de sistemas gestores (MySQL / MariaDB) y copias de seguridad.</div>
+      <div class="card-footer">
+        <span class="card-tag t-bd">SQL</span>
+        <span class="card-tag t-bd">MySQL</span>
+        <div class="card-status wip">En progreso</div>
+      </div>
+    </a>
+
+    <!-- FH -->
+    <a href="modulos/fh.html" class="module-card mod-fh">
+      <div class="card-top">
+        <div class="card-icon">🔧</div>
+        <div class="card-arrow">→</div>
+      </div>
+      <div class="card-code">MP04 · FH</div>
+      <div class="card-title">Fundamentos de Hardware</div>
+      <div class="card-desc">Componentes internos del PC, ensamblado, mantenimiento preventivo/correctivo y periféricos.</div>
+      <div class="card-footer">
+        <span class="card-tag t-hw">Hardware</span>
+        <span class="card-tag t-hw">Ensamblado</span>
+        <div class="card-status wip">En progreso</div>
+      </div>
+    </a>
+
+    <!-- LM -->
+    <a href="modulos/lm.html" class="module-card mod-lm">
+      <div class="card-top">
+        <div class="card-icon">📄</div>
+        <div class="card-arrow">→</div>
+      </div>
+      <div class="card-code">MP05 · LM</div>
+      <div class="card-title">Lenguaje de Marcas</div>
+      <div class="card-desc">HTML5, CSS3, XML, JSON y herramientas de transformación. Estructuración y presentación de documentos web.</div>
+      <div class="card-footer">
+        <span class="card-tag t-web">HTML</span>
+        <span class="card-tag t-web">CSS</span>
+        <span class="card-tag t-web">XML</span>
+        <div class="card-status wip">En progreso</div>
+      </div>
+    </a>
+
+    <!-- SOSTENIBILIDAD -->
+    <a href="modulos/sostenibilidad.html" class="module-card mod-sost">
+      <div class="card-top">
+        <div class="card-icon">🌱</div>
+        <div class="card-arrow">→</div>
+      </div>
+      <div class="card-code">MP06 · SOST</div>
+      <div class="card-title">Sostenibilidad</div>
+      <div class="card-desc">Impacto medioambiental de las TIC, eficiencia energética, economía circular y criterios de consumo responsable.</div>
+      <div class="card-footer">
+        <span class="card-tag t-soft">Medio Ambiente</span>
+        <span class="card-tag t-soft">TIC Verde</span>
+        <div class="card-status wip">En progreso</div>
+      </div>
+    </a>
+
+    <!-- DIGITALIZACIÓN -->
+    <a href="modulos/digitalizacion.html" class="module-card mod-dig">
+      <div class="card-top">
+        <div class="card-icon">⚡</div>
+        <div class="card-arrow">→</div>
+      </div>
+      <div class="card-code">MP07 · DIG</div>
+      <div class="card-title">Digitalización</div>
+      <div class="card-desc">Transformación digital de las organizaciones, herramientas colaborativas en la nube y competencias digitales aplicadas.</div>
+      <div class="card-footer">
+        <span class="card-tag t-tech">Cloud</span>
+        <span class="card-tag t-tech">Industria 4.0</span>
+        <div class="card-status wip">En progreso</div>
+      </div>
+    </a>
+
+    <!-- IPE1 -->
+    <a href="modulos/ipe1.html" class="module-card mod-ipe">
+      <div class="card-top">
+        <div class="card-icon">🧭</div>
+        <div class="card-arrow">→</div>
+      </div>
+      <div class="card-code">MP08 · IPE1</div>
+      <div class="card-title">Itinerario Personal para la Empleabilidad 1</div>
+      <div class="card-desc">Habilidades para la búsqueda de empleo, orientación profesional, CV, entrevistas y mercado laboral del sector TIC.</div>
+      <div class="card-footer">
+        <span class="card-tag t-emp">Empleabilidad</span>
+        <span class="card-tag t-emp">FOL</span>
+        <div class="card-status wip">En progreso</div>
+      </div>
+    </a>
+
+  </div>
+</main>
+
+<footer>
+  <div><span>●</span> Portal de apuntes interactivo · 1º ASIR 25-26</div>
+  <div>Complétalo con tus apuntes 📚</div>
+</footer>
+
+</body>
+</html>
