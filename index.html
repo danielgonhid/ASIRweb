@@ -4,48 +4,67 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="color-scheme" content="dark"/>
-<meta name="description" content="Comandos de 1º ASIR en una sola página: Linux, Windows y bases de datos."/>
+<meta name="description" content="Comandos y apuntes de 1º ASIR por asignaturas, con un buscador para todo."/>
 <title>Chuletas ASIR</title>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <style>
 :root{
   --bg:#090c14;--card:#141929;--border:#252d48;
   --text:#e2e8f0;--soft:#b0bcd4;--muted:#94a3b8;--accent:#38bdf8;
-  --linux:#22d3a5;--win:#60a5fa;--virt:#a78bfa;--db:#fb923c;--danger:#f87171;--success:#4ade80;
-  --mono:'JetBrains Mono',monospace;--r:10px;
+  --linux:#22d3a5;--win:#60a5fa;--danger:#f87171;--success:#4ade80;
+  --mono:'JetBrains Mono',monospace;--r:10px;--c:var(--accent);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font:400 16px/1.6 'Lexend',sans-serif;background:var(--bg);color:var(--text)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-[data-area]{--c:var(--accent)}
-[data-area="Linux"]{--c:var(--linux)}
-[data-area="Windows"]{--c:var(--win)}
-[data-area="Bases de datos"]{--c:var(--db)}
-[data-area="SO y virtualización"]{--c:var(--virt)}
+[data-asig="ISO"]{--c:#38bdf8}
+[data-asig="PAR"]{--c:#22d3a5}
+[data-asig="GBD"]{--c:#a78bfa}
+[data-asig="FH"]{--c:#fb923c}
+[data-asig="LM"]{--c:#f472b6}
+[data-asig="SOST"]{--c:#4ade80}
+[data-asig="DIG"]{--c:#fbbf24}
+[data-asig="IPE1"]{--c:#60a5fa}
+[data-seccion^="Linux"]{--c:var(--linux)}
+[data-seccion^="PowerShell"]{--c:var(--win)}
 
 header,.barra,.cuerpo{max-width:1120px;margin:0 auto;padding-inline:clamp(16px,4vw,32px)}
-header{padding-top:32px}
+header{padding-top:28px}
 h1{font-size:clamp(1.6rem,5vw,2.2rem);line-height:1.2;letter-spacing:-.02em}
-header p{color:var(--muted)}
+h1 a{color:inherit;text-decoration:none}
+#donde{color:var(--muted)}
+#donde a{color:var(--accent)}
 
 .pegada{position:sticky;top:0;z-index:1;background:var(--bg);border-bottom:1px solid var(--border);margin-top:12px}
 .barra{padding-block:12px}
 .barra label{display:block;font-size:.85rem;color:var(--muted);margin-bottom:4px}
 #caja{width:100%;min-height:48px;padding:0 14px;font:inherit;color:var(--text);background:var(--card);border:1px solid var(--border);border-radius:var(--r)}
 #caja::placeholder{color:var(--muted)}
-#areas{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:10px 3px 3px;margin-inline:-3px}
-#areas button{flex:none;min-height:44px;padding:0 16px;font:inherit;font-size:.9rem;color:var(--soft);background:none;border:1px solid var(--border);border-radius:99px;cursor:pointer}
-#areas button:hover{color:var(--text);border-color:var(--c,var(--accent))}
-#areas [aria-pressed="true"]{background:var(--c,var(--accent));border-color:var(--c,var(--accent));color:#06121c;font-weight:600}
 
 .cuerpo{padding-block:20px 64px}
-#indice{display:none}
-#indice a{display:block;padding:5px 10px;font-size:.88rem;color:var(--muted);text-decoration:none;border-left:2px solid var(--border)}
-#indice a:hover{color:var(--text);border-color:var(--c)}
-#indice strong{display:block;margin:14px 0 4px;font-size:.88rem;color:var(--c)}
 #cuenta{font-size:.88rem;color:var(--muted)}
-h2{font-size:1.1rem;margin:30px 0 12px;scroll-margin-top:170px}
-h2 span{color:var(--c);margin-right:8px}
+
+.asigs{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));gap:12px;margin-top:14px}
+.asig{display:block;padding:18px 20px;color:inherit;text-decoration:none;border:1px dashed var(--border);border-radius:var(--r)}
+a.asig{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--c)}
+a.asig:hover{border-color:var(--c)}
+.asig .siglas{font:600 .85rem var(--mono);color:var(--c)}
+.asig strong{display:block;font-weight:600;line-height:1.35;margin:4px 0 6px}
+.asig .desc{display:block;font-size:.88rem;line-height:1.55;color:var(--muted)}
+.asig .estado{display:block;margin-top:10px;font-size:.85rem;color:var(--soft)}
+
+#indice:empty{display:none}
+#indice{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+#indice a,#indice span{display:flex;align-items:center;min-height:44px;padding:4px 14px;font-size:.9rem;line-height:1.35;color:var(--soft);text-decoration:none;border:1px solid var(--border);border-radius:var(--r)}
+#indice span{display:none;border-style:dashed;color:var(--muted)} /* las secciones vacías solo salen en pantallas anchas */
+#indice a:hover{color:var(--text);border-color:var(--c)}
+#indice [aria-current]{color:var(--c);border-color:var(--c);font-weight:600}
+.temas{order:1;flex-basis:100%;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:3px;margin:-3px}
+#indice .temas a{flex:none;border-radius:99px;font-size:.85rem}
+
+h2{font-size:1.4rem;line-height:1.3;color:var(--c)}
+h2:empty{display:none}
+h3{font-size:1.08rem;margin:28px 0 12px;scroll-margin-top:125px}
 
 .cmd,.apunte{background:var(--card);border:1px solid var(--border);border-radius:var(--r);margin-top:10px;overflow:hidden}
 .cab{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border-left:3px solid var(--c);border-bottom:1px solid var(--border);background:rgba(255,255,255,.025)}
@@ -54,7 +73,8 @@ pre{flex:1;min-width:0;align-self:center;font:400 .92rem/1.5 var(--mono);white-s
 .copiar:hover{background:#0369a1}
 .copiar.ok{background:var(--success);color:#06121c}
 .cmd .texto{padding:10px 14px 12px;font-size:.92rem;color:var(--soft)}
-.lugar{display:block;padding:0 14px 10px;font-size:.8rem;color:var(--c)}
+.lugar{display:block;font-size:.8rem;color:var(--c)}
+.cmd .lugar{padding:0 14px 10px}
 .lugar:empty{display:none}
 code{font-family:var(--mono);font-variant-ligatures:none} /* si no, != se ve como ≠ y -- como una raya */
 .texto code{font-size:.86em;background:var(--border);padding:1px 5px;border-radius:4px;color:#7dd3fc;overflow-wrap:anywhere}
@@ -83,125 +103,150 @@ th{background:var(--border);font-size:.82rem}
 td:first-child{color:#7dd3fc}
 
 @media (min-width:900px){
-  .cuerpo{display:grid;grid-template-columns:210px minmax(0,1fr);gap:32px}
-  .cuerpo.buscando{display:block}
-  #indice{display:block;position:sticky;top:165px;align-self:start;max-height:calc(100vh - 185px);overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--border) transparent}
-  .buscando #indice{display:none}
+  .cuerpo.dentro{display:grid;grid-template-columns:230px minmax(0,1fr);gap:32px}
+  #indice{flex-flow:column;gap:4px;margin:0;position:sticky;top:125px;align-self:start;max-height:calc(100vh - 145px);overflow-y:auto;padding:3px;scrollbar-width:thin;scrollbar-color:var(--border) transparent}
+  #indice a,#indice span{display:flex;flex:none;min-height:38px}
+  .temas{order:0;flex:none;flex-direction:column;gap:0;margin:2px 0 8px 12px;padding:0;overflow:visible;border-left:2px solid var(--border)}
+  #indice .temas a{min-height:0;padding:4px 12px;border:0;border-radius:0;color:var(--muted)}
+  #indice .temas a:hover{color:var(--text)}
 }
 </style>
 </head>
 <body>
 <header>
-  <h1>Chuletas ASIR</h1>
-  <p>Comandos y apuntes de 1º, en una sola página.</p>
+  <h1><a href="#">Chuletas ASIR</a></h1>
+  <p id="donde"></p>
 </header>
 <div class="pegada">
   <div class="barra" role="search">
-    <label for="caja">Buscar un comando o lo que hace</label>
+    <label for="caja">Buscar en todas las asignaturas</label>
     <input id="caja" type="search" placeholder="ping, permisos, comprimir…" autocomplete="off" spellcheck="false" autofocus/>
-    <div id="areas" role="group" aria-label="Filtrar por área"></div>
   </div>
 </div>
 <div class="cuerpo" id="cuerpo">
-  <nav id="indice" aria-label="Temas"></nav>
+  <nav id="indice" aria-label="Secciones"></nav>
   <main>
+    <h2 id="seccion"></h2>
     <p id="cuenta" role="status"></p>
     <div id="lista"><p>Si sigues viendo esto, hay un error en <code>comandos.js</code> o <code>apuntes.js</code>. Pulsa F12 y mira la consola.</p></div>
   </main>
 </div>
 
 <template id="tplComando"><article class="cmd"><div class="cab"><pre><code class="titulo"></code></pre><button class="copiar" type="button">Copiar</button></div><p class="texto"></p><span class="lugar"></span></article></template>
-<template id="tplApunte"><details class="apunte"><summary class="titulo"></summary><div class="texto"></div><span class="lugar"></span></details></template>
+<template id="tplApunte"><details class="apunte"><summary><span class="titulo"></span><span class="lugar"></span></summary><div class="texto"></div></details></template>
 
 <script src="comandos.js"></script>
 <script src="apuntes.js"></script>
 <script>
-const sinAcentos = s => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
 const $ = id => document.getElementById(id);
-const idTema = f => sinAcentos(f.area + "-" + f.tema).replace(/[^a-z0-9]+/g, "-");
-
-const FICHAS = [
-  ...COMANDOS.flatMap(g => g.lista.map(([titulo, html]) => ({ area: g.area, tema: g.tema, titulo, html, esComando: true }))),
-  ...APUNTES,
-];
-for (const f of FICHAS) {
-  if (!f.area || !f.tema || !f.titulo || !f.html) throw new Error("Ficha incompleta: " + JSON.stringify(f));
-  f.tituloPlano = sinAcentos(f.titulo);
-  f.todoPlano = sinAcentos([f.titulo, f.html.replace(/<[^>]+>/g, " "), f.area, f.tema].join(" "));
-}
-const AREAS = [...new Set(FICHAS.map(f => f.area))];
-const TEMAS = [...new Set(FICHAS.map(idTema))];
-FICHAS.sort((a, b) => AREAS.indexOf(a.area) - AREAS.indexOf(b.area) || TEMAS.indexOf(idTema(a)) - TEMAS.indexOf(idTema(b)));
-
-// Todas las palabras tienen que aparecer. Orden: el comando exacto, comandos antes que apuntes y, dentro, primero si coincide el título.
-function buscar(consulta, area) {
-  const palabras = sinAcentos(consulta).split(/\s+/).filter(Boolean);
-  const peso = f => (f.tituloPlano + " ").startsWith(palabras.join(" ") + " ") ? -1
-    : (f.esComando ? 0 : 2) + (palabras.every(p => f.tituloPlano.includes(p)) ? 0 : 1);
-  const fichas = FICHAS.filter(f => (!area || f.area === area) && palabras.every(p => f.todoPlano.includes(p)));
-  return palabras.length ? fichas.sort((a, b) => peso(a) - peso(b)) : fichas;
-}
-
-let area = "";
-
-function pintar() {
-  const buscando = $("caja").value.trim() !== "";
-  const fichas = buscar($("caja").value, area);
-  const lista = document.createDocumentFragment(), indice = document.createDocumentFragment();
-  let temaAnterior, areaAnterior;
-  for (const f of fichas) {
-    if (!buscando && idTema(f) !== temaAnterior) {
-      if (f.area !== areaAnterior) indice.append(conArea("strong", f, f.area));
-      const enlace = conArea("a", f, f.tema);
-      enlace.href = "#" + idTema(f);
-      indice.append(enlace);
-      const h2 = conArea("h2", f, f.tema), span = document.createElement("span");
-      span.textContent = f.area;
-      h2.id = idTema(f);
-      h2.prepend(span);
-      lista.append(h2);
-      temaAnterior = idTema(f);
-      areaAnterior = f.area;
-    }
-    const nodo = $(f.esComando ? "tplComando" : "tplApunte").content.firstElementChild.cloneNode(true);
-    nodo.dataset.area = f.area;
-    nodo.querySelector(".titulo").textContent = f.titulo;
-    nodo.querySelector(".texto").innerHTML = f.html;
-    nodo.querySelector(".lugar").textContent = buscando ? f.area + " · " + f.tema : "";
-    lista.append(nodo);
-  }
-  const comandos = fichas.filter(f => f.esComando).length;
-  $("cuenta").textContent = fichas.length
-    ? `Comandos: ${comandos} · Apuntes: ${fichas.length - comandos}`
-    : `Sin resultados${area ? " en " + area + ". Prueba con «Todo»." : "."}`;
-  $("lista").replaceChildren(lista);
-  $("indice").replaceChildren(indice);
-  $("cuerpo").classList.toggle("buscando", buscando);
-}
-
-function conArea(etiqueta, f, texto) {
-  const el = document.createElement(etiqueta);
-  el.dataset.area = f.area;
-  el.textContent = texto;
+const sinAcentos = s => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+// "ISO", "Linux básico", "Redes" -> "iso/linux-basico/redes"
+const ruta = (...partes) => partes.map(p => sinAcentos(p).match(/[a-z0-9]+/g).join("-")).join("/");
+const unicos = lista => [...new Set(lista)];
+function crear(etiqueta, props, ...hijos) {
+  const el = Object.assign(document.createElement(etiqueta), props);
+  el.append(...hijos);
   return el;
 }
 
-for (const a of ["", ...AREAS]) {
-  const b = document.createElement("button");
-  b.type = "button";
-  b.textContent = a || "Todo";
-  if (a) b.dataset.area = a;
-  b.setAttribute("aria-pressed", a === area);
-  b.onclick = () => {
-    area = a;
-    for (const otro of $("areas").children) otro.setAttribute("aria-pressed", otro === b);
-    pintar();
-    scrollTo(0, 0);
-  };
-  $("areas").append(b);
+const FICHAS = [
+  ...COMANDOS.flatMap(({ lista, ...sitio }) => lista.map(([titulo, html]) => ({ ...sitio, titulo, html, esComando: true }))),
+  ...APUNTES,
+];
+for (const f of FICHAS) {
+  if (!f.tema || !f.titulo || !f.html) throw new Error("Ficha incompleta: " + JSON.stringify(f));
+  if (!ASIGNATURAS.find(a => a.siglas === f.asig)?.secciones.includes(f.seccion))
+    throw new Error(`«${f.titulo}»: la sección «${f.seccion}» de ${f.asig} no está en ASIGNATURAS`);
+  f.ruta = ruta(f.asig, f.seccion, f.tema);
+  f.tituloPlano = sinAcentos(f.titulo);
+  f.todoPlano = sinAcentos([f.titulo, f.html.replace(/<[^>]+>/g, " "), f.asig, f.seccion, f.tema].join(" "));
+}
+const SECCIONES = ASIGNATURAS.flatMap(a => a.secciones.map(s => ruta(a.siglas, s)));
+const TEMAS = unicos(FICHAS.map(f => f.ruta));
+const orden = f => SECCIONES.indexOf(ruta(f.asig, f.seccion)) * 1000 + TEMAS.indexOf(f.ruta);
+FICHAS.sort((a, b) => orden(a) - orden(b));
+
+// Todas las palabras tienen que aparecer. Orden: el comando exacto, comandos antes que apuntes y, dentro, primero si coincide el título.
+function buscar(consulta) {
+  const palabras = sinAcentos(consulta).split(/\s+/).filter(Boolean);
+  const peso = f => (f.tituloPlano + " ").startsWith(palabras.join(" ") + " ") ? -1
+    : (f.esComando ? 0 : 2) + (palabras.every(p => f.tituloPlano.includes(p)) ? 0 : 1);
+  return FICHAS.filter(f => palabras.every(p => f.todoPlano.includes(p))).sort((a, b) => peso(a) - peso(b));
+}
+
+const contar = fichas => {
+  const n = fichas.filter(f => f.esComando).length;
+  return `Comandos: ${n} · Apuntes: ${fichas.length - n}`;
+};
+
+function ficha(f, conLugar) {
+  const el = $(f.esComando ? "tplComando" : "tplApunte").content.firstElementChild.cloneNode(true);
+  Object.assign(el.dataset, { asig: f.asig, seccion: f.seccion });
+  el.querySelector(".titulo").textContent = f.titulo;
+  el.querySelector(".texto").innerHTML = f.html;
+  if (conLugar) el.querySelector(".lugar").textContent = `${f.asig} · ${f.seccion} · ${f.tema}`;
+  return el;
+}
+
+function tarjeta(a) {
+  const suyas = FICHAS.filter(f => f.asig === a.siglas);
+  const el = crear(suyas.length ? "a" : "div", { className: "asig" },
+    crear("span", { className: "siglas", textContent: `${a.icono} ${a.siglas}` }),
+    crear("strong", { textContent: a.nombre }),
+    crear("span", { className: "desc", textContent: a.desc }),
+    crear("span", { className: "estado", textContent: suyas.length ? contar(suyas) : "Sin contenido todavía" }));
+  if (suyas.length) el.href = "#" + ruta(a.siglas);
+  el.dataset.asig = a.siglas;
+  return el;
+}
+
+function menu(asig, seccion) {
+  return asig.secciones.flatMap(nombre => {
+    const suyas = FICHAS.filter(f => f.asig === asig.siglas && f.seccion === nombre);
+    if (!suyas.length) return crear("span", { textContent: nombre + " (vacía)" });
+    const enlace = crear("a", { href: "#" + ruta(asig.siglas, nombre), textContent: nombre });
+    if (nombre !== seccion) return enlace;
+    enlace.setAttribute("aria-current", "page");
+    return [enlace, crear("div", { className: "temas" },
+      ...unicos(suyas.map(f => f.tema)).map(t => crear("a", { href: "#" + ruta(asig.siglas, nombre, t), textContent: t })))];
+  });
+}
+
+// La dirección manda: #  portada · #iso  asignatura · #iso/linux-basico  sección · #iso/linux-basico/redes  tema
+function pintar() {
+  const consulta = $("caja").value.trim();
+  const [a, s] = location.hash.slice(1).split("/");
+  const asig = consulta ? null : ASIGNATURAS.find(x => ruta(x.siglas) === a);
+  const deAsig = asig ? FICHAS.filter(f => f.asig === asig.siglas) : [];
+  const seccion = (deAsig.find(f => ruta(f.seccion) === s) ?? deAsig[0])?.seccion ?? "";
+  const portada = !consulta && !asig;
+  const fichas = consulta ? buscar(consulta) : portada ? FICHAS : deAsig.filter(f => f.seccion === seccion);
+
+  const nodos = [];
+  if (portada) nodos.push(crear("div", { className: "asigs" }, ...ASIGNATURAS.map(tarjeta)));
+  else fichas.forEach((f, i) => {
+    if (asig && f.tema !== fichas[i - 1]?.tema) nodos.push(crear("h3", { id: f.ruta, textContent: f.tema }));
+    nodos.push(ficha(f, consulta));
+  });
+
+  $("lista").replaceChildren(...nodos);
+  $("indice").replaceChildren(...(asig ? menu(asig, seccion) : []));
+  $("seccion").textContent = seccion;
+  $("cuenta").textContent = fichas.length ? contar(fichas) : consulta ? "Sin resultados." : "Todavía no hay nada aquí.";
+  $("donde").replaceChildren(...(asig ? [crear("a", { href: "#", textContent: "Asignaturas" }), ` › ${asig.siglas} · ${asig.nombre}`]
+    : [consulta ? "Resultados en todas las asignaturas." : "Elige una asignatura o busca directamente."]));
+  Object.assign($("cuerpo").dataset, { asig: asig?.siglas ?? "", seccion });
+  $("cuerpo").classList.toggle("dentro", Boolean(asig));
+  document.title = asig ? `${seccion || asig.siglas} · Chuletas ASIR` : "Chuletas ASIR";
 }
 
 $("caja").oninput = pintar;
+
+onhashchange = () => {
+  $("caja").value = "";
+  pintar();
+  ($(location.hash.slice(1)) ?? document.body).scrollIntoView();
+};
 
 $("lista").onclick = async e => {
   const b = e.target.closest(".copiar");
@@ -222,12 +267,12 @@ $("lista").onclick = async e => {
 pintar();
 
 // Autocomprobación: si algo se rompe al editar, sale en rojo en la consola (F12)
-const claves = FICHAS.map(f => f.area + "|" + f.titulo);
+const claves = FICHAS.map(f => ruta(f.asig, f.seccion) + " | " + f.titulo);
 console.assert(new Set(claves).size === claves.length, "Repetidos:", claves.filter((c, i) => claves.indexOf(c) !== i));
-console.assert(buscar("PING", "")[0].titulo.startsWith("ping") && buscar("ls", "")[0].titulo === "ls -la", "El comando exacto debe salir primero");
-console.assert(buscar("contraseña", "").length === buscar("contrasena", "").length, "Los acentos no deben importar");
-console.assert(buscar("ping", "Windows").every(f => f.area === "Windows"), "El filtro de área falla");
-console.assert(buscar("zzzz", "").length === 0 && buscar("", "").length === FICHAS.length, "La búsqueda vacía o sin resultados falla");
+console.assert(unicos(SECCIONES).length === SECCIONES.length, "Hay dos secciones con el mismo nombre en una asignatura");
+console.assert(buscar("PING")[0].titulo.startsWith("ping") && buscar("ls")[0].titulo === "ls -la", "El comando exacto debe salir primero");
+console.assert(buscar("contraseña").length === buscar("contrasena").length, "Los acentos no deben importar");
+console.assert(buscar("zzzz").length === 0 && buscar("").length === FICHAS.length, "La búsqueda vacía o sin resultados falla");
 </script>
 </body>
 </html>
