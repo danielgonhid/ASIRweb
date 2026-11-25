@@ -25,14 +25,14 @@ const ASIGNATURAS = [
     desc: "HTML5, CSS3, XML, JSON y herramientas de transformación. Estructuración y presentación de documentos web.",
     secciones: ["XML y DTD", "XSD", "XPath y XQuery", "XSLT y XSL-FO", "HTML", "CSS", "JavaScript"] },
   { siglas: "SOST", icono: "🌱", nombre: "Sostenibilidad",
-    desc: "Impacto medioambiental de las TIC, eficiencia energética, economía circular y criterios de consumo responsable.",
-    secciones: [] },
+    desc: "Criterios ASG, ODS, retos ambientales y sociales, economía circular y planes de sostenibilidad.",
+    secciones: ["ASG y ODS", "Retos ambientales y sociales", "Desempeño profesional", "Economía circular", "Plan de sostenibilidad"] },
   { siglas: "DIG", icono: "⚡", nombre: "Digitalización",
-    desc: "Transformación digital de las organizaciones, herramientas colaborativas en la nube y competencias digitales aplicadas.",
-    secciones: [] },
+    desc: "Entornos IT y OT, tecnologías habilitadoras, nube, inteligencia artificial, datos y ciberseguridad.",
+    secciones: ["IT y OT", "Tecnologías habilitadoras", "La nube", "Inteligencia artificial", "Datos y seguridad", "Transformación digital"] },
   { siglas: "IPE1", icono: "🧭", nombre: "Itinerario Personal para la Empleabilidad 1",
-    desc: "Habilidades para la búsqueda de empleo, orientación profesional, CV, entrevistas y mercado laboral del sector TIC.",
-    secciones: [] },
+    desc: "Prevención de riesgos, primeros auxilios, contratos, nómina, Seguridad Social y búsqueda de empleo.",
+    secciones: ["Prevención de riesgos", "Emergencias y primeros auxilios", "Contrato y convenio", "Nómina y Seguridad Social", "Orientación y empleo"] },
 ];
 
 const COMANDOS = [
