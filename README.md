@@ -12,11 +12,11 @@ El propósito principal de este repositorio es la experimentación propia y vali
 
 ## Stack tecnológico 👨‍💻
 - **Hosting**: Github Pages.
-- **Lenguajes**: HTML5 / CSS3.
+- **Lenguajes**: HTML5 / CSS3 / JavaScript.
 - **Control de versiones**: Git / VS Code.
 
 ## Hoja de ruta 🔎
 - [X] Despliegue inicial de página "en obras".
-- [ ] Implementación de la estructura modular por asignaturas.
+- [X] Implementación de la estructura modular por asignaturas.
 - [ ] Experimentación con **GitHub Actions** para validación del código.
 - [ ] Pruebas de integración con dominios personalizados y certificados SSL.
