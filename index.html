@@ -79,6 +79,7 @@ pre{flex:1;min-width:0;align-self:center;font:400 .92rem/1.5 var(--mono);white-s
 code{font-family:var(--mono);font-variant-ligatures:none} /* si no, != se ve como ≠ y -- como una raya */
 .texto code{font-size:.86em;background:var(--border);padding:1px 5px;border-radius:4px;color:#7dd3fc;overflow-wrap:anywhere}
 .texto strong{color:var(--text)}
+.texto a{color:var(--accent)}
 
 .apunte{background:none;border-style:dashed}
 .apunte summary{min-height:44px;padding:10px 14px;font-size:.92rem;color:var(--soft);cursor:pointer}
@@ -176,7 +177,7 @@ function buscar(consulta) {
 
 const contar = fichas => {
   const n = fichas.filter(f => f.esComando).length;
-  return `Comandos: ${n} · Apuntes: ${fichas.length - n}`;
+  return [n && `Comandos: ${n}`, fichas.length - n && `Apuntes: ${fichas.length - n}`].filter(Boolean).join(" · ");
 };
 
 function ficha(f, conLugar) {
