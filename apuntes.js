@@ -1144,7 +1144,25 @@ Para eliminar filas completas de una tabla se utiliza <code>DELETE FROM</code>. 
 <tr><td>4. Autoconocimiento y hoja de ruta profesional</td><td>Orientación y empleo</td></tr>
 <tr><td>5. Aprendizaje autónomo e identidad digital</td><td>Orientación y empleo</td></tr>
 </table><div class="note">Módulo 1709, <em>Itinerario personal para la empleabilidad I</em>.<br>Prevención, emergencias y nómina son un resumen adaptado de los apuntes <em>IPE I</em> de Manuel Mojardín (CIFP Avilés), con licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">CC BY-NC-SA 4.0</a>; esas secciones se comparten con la misma licencia.</div>
-<div class="callout cw"><span class="ci2">⚠️</span><div>Es para estudiar. Las leyes cambian y el convenio puede mejorarlas: antes de reclamar algo, mira el BOE, tu convenio o pregunta a un sindicato.</div></div>
+<div class="callout cw"><span class="ci2">⚠️</span><div>Es para estudiar. Leyes cotejadas con el BOE el <strong>25-11-2026</strong>. Los decretos-leyes 39/2026 y 42/2026 son de ese mes y aún no consta que el Congreso los haya convalidado. El convenio puede mejorar la ley: antes de reclamar algo, mira el BOE, tu convenio o pregunta a un sindicato.</div></div>
+` },
+
+  { asig: "IPE1", seccion: "Prevención de riesgos", tema: "Guía del módulo", titulo: "Las leyes, en el BOE", html: r`
+<table class="dt">
+<tr><th>Tema</th><th>Dónde leerlo</th></tr>
+<tr><td>Contratos y prueba</td><td><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430">Estatuto de los Trabajadores</a>, 8, 11, 12 y 14 a 16</td></tr>
+<tr><td>Jornada, permisos y vacaciones</td><td>Estatuto, 34 a 38, 46 y 48</td></tr>
+<tr><td>Cambios, despidos y plazos</td><td>Estatuto, 39 a 41 y 49 a 59</td></tr>
+<tr><td>Salario</td><td>Estatuto, 26 a 33; <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2026-3815">SMI 2026</a>; <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2000-323">embargos (LEC, 607)</a></td></tr>
+<tr><td>Representantes, convenio y huelga</td><td>Estatuto, 62 a 68 y 82 a 92; <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1977-6061">RDL 17/1977</a></td></tr>
+<tr><td>Teletrabajo</td><td><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2021-11472">Ley 10/2021</a></td></tr>
+<tr><td>Cotización</td><td><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296">Orden PJC/297/2026</a></td></tr>
+<tr><td>Bajas, pensiones y paro</td><td><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724">Ley General de la Seguridad Social</a>, 156, 169 a 179, 194 a 224 y 262 a 280</td></tr>
+<tr><td>Prevención</td><td><a href="https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292">Ley 31/1995</a> y <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1997-1853">RD 39/1997</a></td></tr>
+<tr><td>Lugares, señales, cargas, pantallas y ruido</td><td>RD <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1997-8669">486</a>, <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1997-8668">485</a>, <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1997-8670">487</a> y <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1997-8671">488/1997</a>; <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2006-4414">286/2006</a></td></tr>
+<tr><td>Autoprotección</td><td><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2026-21144">Orden INT/1068/2026</a></td></tr>
+<tr><td>Multas</td><td><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2000-15060">LISOS</a>, 39 y 40</td></tr>
+</table><div class="note">Es el texto consolidado: la última versión, con sus cambios. Mira siempre la fecha de vigencia de cada artículo, porque a veces ya sale uno que aún no se aplica.</div>
 ` },
 
   { asig: "IPE1", seccion: "Prevención de riesgos", tema: "Conceptos", titulo: "Riesgo, accidente y enfermedad profesional", html: r`
@@ -1154,7 +1172,7 @@ Para eliminar filas completas de una tabla se utiliza <code>DELETE FROM</code>. 
 <tr><td>Qué es</td><td>Lesión con ocasión o por consecuencia del trabajo</td><td>La causada por el trabajo <strong>y</strong> que está en el cuadro oficial (RD 1299/2006)</td></tr>
 <tr><td>Aparece</td><td>De golpe</td><td>Poco a poco</td></tr>
 <tr><td>La combate</td><td>Seguridad en el trabajo</td><td>Higiene industrial</td></tr>
-</table><div class="note"><strong>También es accidente de trabajo:</strong> <em>in itinere</em> (ir o volver por el camino y en el tiempo habituales), <em>en misión</em>, por un cargo sindical, en un salvamento, por exceso de confianza, y las enfermedades causadas por el trabajo que no están en el cuadro.<br><strong>No lo es:</strong> fuerza mayor ajena al trabajo, provocarlo a propósito o imprudencia temeraria.<br><strong>Otros daños:</strong> estrés, fatiga, insatisfacción, <em>mobbing</em> (acoso) y <em>burnout</em> (estar quemado).</div>
+</table><div class="note"><strong>También es accidente de trabajo:</strong> <em>in itinere</em> (ir o volver por el camino y en el tiempo habituales), <em>en misión</em>, por un cargo sindical, en un salvamento, por exceso de confianza, y las enfermedades causadas solo por el trabajo que no están en el cuadro. Lo que pasa en el tiempo y el lugar de trabajo se presume accidente (LGSS, art. 156).<br><strong>No lo es:</strong> fuerza mayor ajena al trabajo (la insolación y el rayo no cuentan como tal), provocarlo a propósito o imprudencia temeraria.<br><strong>Otros daños:</strong> estrés, fatiga, insatisfacción, <em>mobbing</em> (acoso) y <em>burnout</em> (estar quemado).</div>
 ` },
 
   { asig: "IPE1", seccion: "Prevención de riesgos", tema: "Conceptos", titulo: "Tipos de riesgo y quién los combate", html: r`
@@ -1164,15 +1182,15 @@ Para eliminar filas completas de una tabla se utiliza <code>DELETE FROM</code>. 
 <tr><td>Medioambientales</td><td>Físicos (ruido, vibración, temperatura, luz, radiación), químicos y biológicos</td><td>Higiene industrial</td></tr>
 <tr><td>Ergonómicas</td><td>Carga física (posturas, pesos) y mental</td><td>Ergonomía</td></tr>
 <tr><td>Psicosociales</td><td>Turnos, mal mando, inseguridad, monotonía</td><td>Psicosociología</td></tr>
-</table><div class="note">La quinta técnica es la <strong>medicina del trabajo</strong>, que vigila la salud.<br><strong>Ruido:</strong> desde 80 dB(A), protectores a tu disposición; desde 85, obligatorios; 87 es el límite.<br><strong>Oficina:</strong> 17 a 27 ºC y humedad del 30 al 70 %. Por persona, 2 m² libres y 10 m³.</div>
+</table><div class="note">La quinta técnica es la <strong>medicina del trabajo</strong>, que vigila la salud.<br><strong>Ruido</strong> (RD 286/2006): por encima de 80 dB(A), protectores a tu disposición; desde 85, obligatorios; 87 es el límite.<br><strong>Oficina</strong> (RD 486/1997): 17 a 27 ºC; humedad del 30 al 70 %, o del 50 como mínimo si hay electricidad estática. Techo a 2,5 m y, por persona, 2 m² libres y 10 m³.</div>
 ` },
 
   { asig: "IPE1", seccion: "Prevención de riesgos", tema: "Normas", titulo: "Derechos, deberes y responsabilidades", html: r`
 <div class="note"><strong>Normas:</strong> Directiva marco 89/391/CEE, art. 40 de la Constitución, <strong>Ley 31/1995 (LPRL)</strong> y RD 39/1997 (servicios de prevención). El convenio solo puede mejorar.<br><strong>Organismos:</strong> INSST (estudia y asesora), Inspección de Trabajo (vigila y sanciona), Agencia Europea (Bilbao).</div>
 <div class="grid2">
-<div class="ic"><div class="ic-lbl">La empresa debe</div><div class="ic-sub">Evaluar los riesgos, planificar, dar EPI gratis, informar, formar en horario de trabajo, vigilar la salud, consultar y parar si hay riesgo grave e inminente.</div></div>
+<div class="ic"><div class="ic-lbl">La empresa debe</div><div class="ic-sub">Evaluar los riesgos, planificar, dar EPI gratis, informar, formar en horario de trabajo (o descontándolo), vigilar la salud, consultar y parar si hay riesgo grave e inminente.</div></div>
 <div class="ic"><div class="ic-lbl">La plantilla debe</div><div class="ic-sub">Cumplir las medidas, usar bien equipos y EPI, no anular protecciones y avisar de los riesgos.</div></div>
-</div><div class="note"><strong>Si la empresa incumple:</strong> responsabilidad administrativa (multa, cierre), civil (indemnizar), penal y recargo del 30 al 50 % en las prestaciones. <strong>Si incumples tú:</strong> sanción disciplinaria, hasta el despido.<br><strong>Reconocimiento médico:</strong> voluntario salvo excepciones, gratuito y confidencial. La empresa solo sabe si eres apto.</div>
+</div><div class="note"><strong>Riesgo grave e inminente:</strong> puedes parar e irte sin que te sancionen, salvo mala fe o negligencia grave (LPRL, art. 21).<br><strong>Si la empresa incumple:</strong> responsabilidad administrativa, civil (indemnizar), penal y recargo del 30 al 50 % en las prestaciones. Multas de prevención (LISOS, art. 40): leves, de 45 a 2.450 €; graves, hasta 49.180; muy graves, hasta 983.736. <strong>Si incumples tú:</strong> sanción disciplinaria, hasta el despido.<br><strong>Reconocimiento médico:</strong> voluntario salvo excepciones, gratuito y confidencial. La empresa solo sabe si eres apto.</div>
 ` },
 
   { asig: "IPE1", seccion: "Prevención de riesgos", tema: "Normas", titulo: "Los 9 principios de la prevención", html: r`
@@ -1192,12 +1210,12 @@ Para eliminar filas completas de una tabla se utiliza <code>DELETE FROM</code>. 
   { asig: "IPE1", seccion: "Prevención de riesgos", tema: "Gestión", titulo: "Quién organiza la prevención", html: r`
 <table class="dt">
 <tr><th>Modalidad</th><th>Cuándo</th></tr>
-<tr><td>El propio empresario</td><td>Hasta 10 trabajadores, o 25 en un solo centro; trabaja allí, tiene formación y no hay actividad peligrosa</td></tr>
+<tr><td>El propio empresario</td><td>Hasta 10 trabajadores, o 25 en un solo centro; trabaja allí, tiene formación y no hay actividad peligrosa (anexo I). Nunca la vigilancia de la salud</td></tr>
 <tr><td>Trabajadores designados</td><td>Con formación, tiempo y medios</td></tr>
-<tr><td>Servicio propio</td><td>Obligatorio con más de 500, o más de 250 si es peligrosa. Al menos 2 especialidades</td></tr>
+<tr><td>Servicio propio</td><td>Obligatorio con más de 500, de 250 a 500 si la actividad es del anexo I, o si lo manda la autoridad laboral. Al menos 2 especialidades</td></tr>
 <tr><td>Servicio ajeno</td><td>Se contrata fuera; lo más común</td></tr>
-<tr><td>Mancomunado</td><td>Varias empresas del mismo sector, grupo o zona</td></tr>
-</table><div class="note"><strong>Formación:</strong> básica, 30 o 50 horas; intermedia, 300 (FP); superior, 600 (universidad).<br><strong>Auditoría</strong> si no se contrata todo fuera: cada 4 años, o 2 si es peligrosa.<br><strong>Delegados de prevención:</strong> hasta 30, el delegado de personal; de 31 a 49, uno; de 50 a 100, dos; de 101 a 500, tres; de 501 a 1000, cuatro.<br><strong>Comité de seguridad y salud:</strong> desde 50; mitad empresa y mitad delegados; se reúne cada trimestre.</div>
+<tr><td>Mancomunado</td><td>Varias empresas del mismo sector, grupo, edificio o zona. Al menos 3 especialidades</td></tr>
+</table><div class="note"><strong>Formación:</strong> básica, 30 o 50 horas; intermedia, 300 (FP); superior, 600 (universidad).<br><strong>Auditoría</strong> si no se contrata todo fuera: cada 4 años, o 2 si es del anexo I.<br><strong>Delegados de prevención:</strong> hasta 30, el delegado de personal; de 31 a 49, uno; de 50 a 100, dos; de 101 a 500, tres; de 501 a 1000, cuatro.<br><strong>Comité de seguridad y salud:</strong> desde 50; mitad empresa y mitad delegados; se reúne cada trimestre.</div>
 ` },
 
   { asig: "IPE1", seccion: "Prevención de riesgos", tema: "En la práctica", titulo: "Señales y colores", html: r`
@@ -1225,14 +1243,14 @@ Para eliminar filas completas de una tabla se utiliza <code>DELETE FROM</code>. 
 ` },
 
   { asig: "IPE1", seccion: "Prevención de riesgos", tema: "En la práctica", titulo: "El puesto con ordenador", html: r`
-<div class="note"><strong>Pantalla</strong> (RD 488/1997): de frente, a 40 cm o más, con el borde superior a la altura de los ojos y sin reflejos; la ventana, de lado.<br><strong>Silla:</strong> regulable, espalda apoyada, pies en el suelo, antebrazos apoyados y muñecas rectas.<br><strong>Pausas:</strong> cortas y frecuentes, unos 10 minutos por cada hora y media. Mira lejos.<br><strong>Cargas:</strong> 25 kg como norma; 15 kg para mujeres, jóvenes y mayores. Pies separados, dobla las rodillas, espalda recta y la carga pegada. Un servidor en el rack, entre dos.<br><strong>Taller:</strong> desenchufa antes de abrir y no abras la fuente: guarda carga aun desconectada.</div>
+<div class="note"><strong>Pantalla</strong> (RD 488/1997 y guía del INSST): orientable y sin reflejos, de frente, a 40 cm o más y con el borde superior a la altura de los ojos; la ventana, de lado.<br><strong>Silla:</strong> regulable, espalda apoyada, pies en el suelo (reposapiés si lo pides), antebrazos apoyados y muñecas rectas.<br><strong>Vista:</strong> revisión antes de empezar, después según el riesgo y si hay molestias. Si las gafas normales no sirven, la empresa paga unas especiales.<br><strong>Pausas:</strong> cortas y frecuentes, unos 10 minutos por cada hora y media. Mira lejos.<br><strong>Cargas</strong> (RD 487/1997): primero, evitarlas con medios mecánicos. Según la guía del INSST, 25 kg como norma; 15 kg para mujeres, jóvenes y mayores. Pies separados, dobla las rodillas, espalda recta y la carga pegada. Un servidor en el rack, entre dos.<br><strong>Taller:</strong> desenchufa antes de abrir y no abras la fuente: guarda carga aun desconectada.</div>
 ` },
 
   { asig: "IPE1", seccion: "Emergencias y primeros auxilios", tema: "Emergencias", titulo: "Planes y evacuación", html: r`
 <table class="dt">
 <tr><th>Plan</th><th>Quién</th></tr>
 <tr><td>De emergencias</td><td>Todas las empresas (LPRL): qué puede pasar, quién hace qué y cómo se actúa</td></tr>
-<tr><td>De autoprotección</td><td>Las actividades del RD 393/2007 (industria, transporte, energía, espectáculos…). Se revisa al menos cada 3 años, con un simulacro al año</td></tr>
+<tr><td>De autoprotección</td><td>Las actividades de la Directriz Básica de octubre de 2026 (Orden INT/1068/2026, sustituye al RD 393/2007): industria, transporte, energía, espectáculos… Se revisa al menos cada 5 años, con un simulacro al año</td></tr>
 </table><div class="note"><strong>Gravedad:</strong> conato, emergencia parcial y emergencia general.<br><strong>Evacuar:</strong> deja lo que haces, no cojas tus cosas, sin correr, sin ascensor, sin volver atrás, hasta el punto de encuentro.<br><strong>Confinarse:</strong> si el peligro está fuera (humo, gas tóxico).</div>
 ` },
 
@@ -1271,27 +1289,57 @@ Para eliminar filas completas de una tabla se utiliza <code>DELETE FROM</code>. 
 <tr><th>Contrato</th><th>Para qué</th><th>Duración</th></tr>
 <tr><td>Indefinido</td><td>Lo normal, si no se justifica otra cosa</td><td>Sin fin</td></tr>
 <tr><td>Fijo-discontinuo</td><td>Trabajo de temporada que se repite</td><td>Sin fin, por llamamientos</td></tr>
-<tr><td>Circunstancias de la producción</td><td>Aumento imprevisible</td><td>6 meses (12 si lo dice el convenio del sector)</td></tr>
-<tr><td></td><td>Aumento previsible y corto</td><td>90 días al año, no seguidos</td></tr>
-<tr><td>Sustitución</td><td>Cubrir a alguien con reserva de puesto</td><td>Lo que dure la ausencia</td></tr>
-<tr><td>Formación en alternancia</td><td>Trabajar y estudiar a la vez</td><td>3 meses a 2 años. Al menos 60 % del convenio el primer año y 75 % el segundo, nunca menos del SMI proporcional</td></tr>
+<tr><td>Tiempo parcial</td><td>Menos horas que la jornada completa</td><td>Puede ser fijo o temporal</td></tr>
+<tr><td>Circunstancias de la producción</td><td>Aumento ocasional e imprevisible, u oscilaciones (también por vacaciones)</td><td>6 meses (12 si lo dice el convenio del sector) y una sola prórroga</td></tr>
+<tr><td></td><td>Aumento previsible y corto</td><td>90 días al año por empresa, no seguidos</td></tr>
+<tr><td>Sustitución</td><td>Cubrir a alguien con reserva de puesto, una jornada reducida o una selección</td><td>Lo que dure la causa; la selección, 3 meses</td></tr>
+<tr><td>Formación en alternancia</td><td>Trabajar y estudiar a la vez</td><td>3 meses a 2 años. Al menos 60 % del convenio el primer año y 75 % el segundo, nunca menos del SMI proporcional. Trabajo: hasta el 65 % de la jornada el primer año y el 85 % el segundo</td></tr>
 <tr><td>Práctica profesional</td><td>Hasta 3 años después del título (5 con discapacidad)</td><td>6 meses a 1 año</td></tr>
-</table><div class="note"><strong>Edad:</strong> desde 16; hasta 18, con permiso si no está emancipado.<br><strong>Periodo de prueba</strong>, por escrito y si el convenio no dice otra cosa: 6 meses con título, 2 el resto (3 en empresas de menos de 25) y 1 si el temporal es de hasta 6 meses. Nadie tiene que avisar ni indemnizar. En alternancia no hay.<br><strong>Pasas a fijo</strong> con fraude, si no te dan de alta, o con más de 18 meses en 24 encadenando contratos por circunstancias de la producción.<br><strong>Teletrabajo:</strong> desde el 30 % de la jornada en 3 meses. Por escrito, la empresa paga los gastos y hay desconexión digital.</div>
+</table><div class="note"><strong>Edad:</strong> desde 16; hasta 18, con permiso si no está emancipado.<br><strong>Periodo de prueba</strong> (cambió el 19-11-2026), por escrito: 6 meses con título y 2 el resto (3 en empresas de menos de 25). Temporales: 1 mes si duran 6 meses o más; si duran menos, en proporción (3 meses, medio mes). Práctica profesional: 1 mes. Alternancia: no hay. El convenio solo puede pasar de ahí si lo justifica. Es nulo si ya hiciste ese trabajo en la empresa. Nadie tiene que indemnizar.<br><strong>Pasas a fijo</strong> con fraude, si no te dan de alta pasado lo que podía durar la prueba, o con más de 18 meses en 24 con dos o más contratos por circunstancias de la producción (también si es el puesto el que se cubre así).<br><strong>Horas complementarias</strong> (tiempo parcial): pactadas por escrito, hasta el 30 % de las ordinarias (60 % por convenio) y con 3 días de aviso. Extras, solo por fuerza mayor.<br><strong>Teletrabajo:</strong> desde el 30 % de la jornada en 3 meses. Por escrito, la empresa paga los gastos y hay desconexión digital.</div>
+` },
+
+  { asig: "IPE1", seccion: "Contrato y convenio", tema: "Relación laboral", titulo: "Antes de firmar: forma, información y pactos", html: r`
+<table class="dt">
+<tr><th>Qué</th><th>Regla</th></tr>
+<tr><td>Por escrito</td><td>Formativos, parcial, fijo-discontinuo, relevo, a distancia y temporales de más de 4 semanas. Si falta, se presume indefinido y a jornada completa. Puedes exigirlo siempre</td></tr>
+<tr><td>Información</td><td>Antes de empezar y por escrito: puesto, sueldo, horario, vacaciones, prueba, convenio, preavisos y si deciden algoritmos. Los cambios, como tarde el día que se aplican (RD 723/2026)</td></tr>
+<tr><td>Oficina de empleo</td><td>La empresa comunica el contrato en 10 días</td></tr>
+<tr><td>Otro empleo a la vez</td><td>No te lo pueden prohibir, salvo causa objetiva (salud, secretos, conflicto de intereses) o pacto de plena dedicación pagado</td></tr>
+<tr><td>No competir después</td><td>Hasta 2 años los técnicos y 6 meses el resto, si hay interés real y te lo pagan</td></tr>
+<tr><td>Permanencia</td><td>Hasta 2 años y por escrito, si te pagan una especialización</td></tr>
+<tr><td>Pasar a algo más estable</td><td>Puedes pedir una vacante (de temporal a fijo, de parcial a completa). Responden por escrito en 1 mes; 3 si son 10 o menos</td></tr>
+<tr><td>Hablar de tu sueldo</td><td>Es un derecho; la cláusula que lo prohíbe es nula</td></tr>
+</table><div class="note">Estatuto, arts. 8, 21, 21 bis y 28. Los de empleo simultáneo, vacantes y sueldo cambiaron el 19-11-2026 (RDL 39/2026).</div>
 ` },
 
   { asig: "IPE1", seccion: "Contrato y convenio", tema: "Condiciones", titulo: "Jornada, descansos y vacaciones", html: r`
 <table class="dt">
 <tr><th>Qué</th><th>Mínimo legal (el convenio puede mejorarlo)</th></tr>
-<tr><td>Jornada</td><td>40 horas a la semana de media anual; 9 al día salvo acuerdo. Menores de 18: 8 al día</td></tr>
+<tr><td>Jornada</td><td>40 horas a la semana de media anual; 9 al día salvo convenio o acuerdo. Menores de 18: 8 al día. Sin pacto, la empresa puede repartir a su modo el 10 % del año, con 5 días de aviso</td></tr>
 <tr><td>Entre jornadas</td><td>12 horas</td></tr>
 <tr><td>En la jornada</td><td>15 minutos si pasa de 6 horas. Menores: 30 si pasa de 4 y media</td></tr>
-<tr><td>Semanal</td><td>Día y medio seguido; menores, 2 días</td></tr>
-<tr><td>Horas extra</td><td>80 al año como mucho, sin contar las compensadas con descanso. Voluntarias salvo pacto; menores, ninguna</td></tr>
-<tr><td>Noche</td><td>De 22 a 6. Media de 8 horas y sin extras</td></tr>
-<tr><td>Vacaciones</td><td>30 días naturales. No se cambian por dinero, salvo al irte</td></tr>
-<tr><td>Festivos</td><td>14 al año</td></tr>
+<tr><td>Semanal</td><td>Día y medio seguido, acumulable hasta en 14 días; menores, 2 días</td></tr>
+<tr><td>Horas extra</td><td>80 al año como mucho, sin contar las compensadas con descanso. Sin pacto, se compensan con descanso en 4 meses. Voluntarias salvo pacto; menores, ninguna</td></tr>
+<tr><td>Noche</td><td>De 22 a 6. Media de 8 horas en 15 días y sin extras. Menores, no</td></tr>
+<tr><td>Vacaciones</td><td>30 días naturales; sabes las fechas 2 meses antes. No se cambian por dinero, salvo al irte. Si coinciden con una baja, las coges después (hasta 18 meses desde que acabe el año)</td></tr>
+<tr><td>Festivos</td><td>14 al año, 2 de ellos locales</td></tr>
 <tr><td>Registro</td><td>Diario y obligatorio; se guarda 4 años</td></tr>
 </table>
+` },
+
+  { asig: "IPE1", seccion: "Contrato y convenio", tema: "Condiciones", titulo: "Permisos, reducciones y excedencias", html: r`
+<table class="dt">
+<tr><th>Permiso pagado (art. 37)</th><th>Mínimo legal</th></tr>
+<tr><td>Boda o pareja de hecho</td><td>15 días naturales</td></tr>
+<tr><td>Enfermedad grave, hospital u operación con reposo de un familiar hasta 2º grado o de un conviviente</td><td>5 días</td></tr>
+<tr><td>Muerte de cónyuge, pareja, padres o hijos (desde el 26-11-2026)</td><td>10 días laborables</td></tr>
+<tr><td>Muerte de suegros, hermanos, abuelos, nietos o cuñados</td><td>3 días laborables; 5 si viajas</td></tr>
+<tr><td>Mudanza</td><td>1 día</td></tr>
+<tr><td>Votar, juzgado, preparación al parto</td><td>Lo indispensable</td></tr>
+<tr><td>No poder llegar por catástrofe o aviso oficial</td><td>Hasta 4 días, y más si sigue</td></tr>
+<tr><td>Urgencia familiar</td><td>Horas que sumen 4 días al año</td></tr>
+<tr><td>Cuidado del lactante</td><td>1 hora al día hasta los 9 meses, o acumulada</td></tr>
+</table><div class="note"><strong>Duelo:</strong> se puede empezar en las 4 semanas siguientes.<br><strong>Reducir la jornada:</strong> de un octavo a la mitad, por un menor de 12 o un familiar que no se vale. El sueldo baja igual.<br><strong>Adaptarla o teletrabajar</strong> (34.8): lo pides, se negocia 15 días como mucho y, si no se oponen con motivos, vale.<br><strong>Permiso parental</strong> (48 bis): hasta 8 semanas sin sueldo, hasta que cumpla 8 años.<br><strong>Excedencia voluntaria:</strong> con un año en la empresa, de 4 meses a 5 años; solo da preferencia para volver. <strong>Por hijos</strong>, hasta 3 años; <strong>por familiares</strong>, hasta 2: el primero guardan tu puesto y luego uno del mismo grupo. <strong>Forzosa:</strong> cargo público; guardan el puesto.</div>
 ` },
 
   { asig: "IPE1", seccion: "Contrato y convenio", tema: "Condiciones", titulo: "Si te cambian las condiciones", html: r`
@@ -1301,8 +1349,18 @@ Para eliminar filas completas de una tabla se utiliza <code>DELETE FROM</code>. 
 <tr><td>Funciones inferiores</td><td>Solo el tiempo imprescindible y sin bajar el sueldo</td></tr>
 <tr><td>Desplazamiento (hasta 12 meses en 3 años)</td><td>Viaje y dietas pagados. Si pasa de 3 meses: aviso de 5 días laborables y 4 de descanso en casa por cada 3 meses</td></tr>
 <tr><td>Traslado (más de 12 meses en 3 años)</td><td>Aviso de 30 días. Aceptar con gastos, irte con 20 días por año (máximo 12 meses) o reclamar</td></tr>
-<tr><td>Modificación sustancial (horario, turnos, sueldo…)</td><td>Aviso de 15 días. Aceptar, reclamar o, si perjudica, irte con 20 días por año (máximo 9 meses)</td></tr>
+<tr><td>Modificación sustancial (horario, turnos, sueldo…)</td><td>Aviso de 15 días. Aceptar, reclamar o, si perjudica, irte con 20 días por año (máximo 9 meses), salvo que solo cambie el sistema de trabajo</td></tr>
 </table><div class="callout cw"><span class="ci2">⚠️</span><div>Para reclamar hay <strong>20 días hábiles</strong>. En general se obedece y se reclama, salvo órdenes ilegales, peligrosas o contra la dignidad.</div></div>
+` },
+
+  { asig: "IPE1", seccion: "Contrato y convenio", tema: "Condiciones", titulo: "Despido: causas y forma", html: r`
+<table class="dt">
+<tr><th>Despido</th><th>Causa y forma</th></tr>
+<tr><td>Disciplinario (54)</td><td>Incumplimiento grave y culpable: faltas repetidas, desobediencia, ofensas, mala fe, bajo rendimiento voluntario, embriaguez habitual, acoso<br><strong>Forma:</strong> carta con los hechos y la fecha</td></tr>
+<tr><td>Objetivo (52)</td><td>Ineptitud; no adaptarse a un cambio técnico (antes, curso y 2 meses); causas económicas, técnicas, organizativas o de producción<br><strong>Forma:</strong> carta con la causa, indemnización a la vez, 15 días de aviso y 6 horas a la semana para buscar trabajo</td></tr>
+<tr><td>Colectivo (51)</td><td>Esas mismas causas, si en 90 días afecta a 10 (menos de 100 en plantilla), al 10 % (100 a 300) o a 30 (más)<br><strong>Forma:</strong> antes se negocia 30 días (15 con menos de 50) y se avisa a la autoridad laboral</td></tr>
+</table><div class="note"><strong>Procedente:</strong> se prueba la causa. <strong>Improcedente:</strong> no se prueba o falla la forma. <strong>Nulo:</strong> discrimina o viola derechos fundamentales, o es por embarazo, permisos de nacimiento (y hasta 12 meses después del parto), cuidados o violencia de género, salvo que se pruebe otra causa.<br><strong>Pérdidas:</strong> valen las actuales o previstas, o vender menos 3 trimestres seguidos que un año antes.<br><strong>Impago</strong> (50): con 3 mensualidades debidas en un año, o 6 meses cobrando con más de 15 días de retraso, puedes pedir al juez irte como en el improcedente.</div>
+<div class="callout ct"><span class="ci2">🧮</span><div><strong>1.800 € al mes con extras incluidas, 2 años y 5 meses.</strong><br>Día: 1.800 × 12 ÷ 365 = 59,18 €. Tiempo: 29 ÷ 12 años.<br>Objetivo: 59,18 × 20 × 29 ÷ 12 = <strong>2.860,37 €</strong><br>Improcedente: 59,18 × 33 × 29 ÷ 12 = <strong>4.719,61 €</strong></div></div>
 ` },
 
   { asig: "IPE1", seccion: "Contrato y convenio", tema: "Condiciones", titulo: "Fin del contrato y paro", html: r`
@@ -1313,13 +1371,16 @@ Para eliminar filas completas de una tabla se utiliza <code>DELETE FROM</code>. 
 <tr><td>Fin de sustitución o formativo</td><td>Nada</td><td>Sí</td></tr>
 <tr><td>Despido objetivo o colectivo</td><td>20 días por año, máximo 12 mensualidades; aviso de 15 días el objetivo</td><td>Sí</td></tr>
 <tr><td>Disciplinario procedente</td><td>Nada</td><td>Sí</td></tr>
-<tr><td>Improcedente</td><td>33 días por año, máximo 24 mensualidades, o readmisión: elige la empresa (o tú, si eres representante)</td><td>Sí</td></tr>
+<tr><td>Improcedente</td><td>33 días por año, máximo 24 mensualidades, o readmisión con los salarios dejados de cobrar: elige la empresa en 5 días (o tú, si eres representante)</td><td>Sí</td></tr>
 <tr><td>Nulo</td><td>Readmisión y salarios dejados de cobrar</td><td></td></tr>
-</table><div class="note"><strong>Finiquito:</strong> se cobra siempre. Días trabajados, parte de las extras y vacaciones sin disfrutar. Firma «no conforme» si dudas.<br><strong>Despido:</strong> 20 días hábiles para reclamar, primero en conciliación.<br><strong>Paro:</strong> con 360 días cotizados en los últimos 6 años. 70 % de la base los primeros 180 días y 60 % después, con topes. Se pide en 15 días hábiles.</div>
+<tr><td>Te vas por impago o incumplimiento grave (lo decide el juez)</td><td>Como el improcedente</td><td>Sí</td></tr>
+<tr><td>Te vas por un traslado o un cambio sustancial</td><td>20 días por año, máximo 12 meses (traslado) o 9</td><td>Sí</td></tr>
+<tr><td>No pasas la prueba (decide la empresa)</td><td>Nada</td><td>Sí, si el empleo anterior no lo dejaste tú o acabó hace 3 meses</td></tr>
+</table><div class="note"><strong>Finiquito:</strong> se cobra siempre. Días trabajados, parte de las extras y vacaciones sin disfrutar. Firma «no conforme» si dudas; puedes pedir que esté un representante.<br><strong>Aviso:</strong> si un temporal dura más de un año, 15 días.<br><strong>Plazos:</strong> despido, 20 días hábiles (sin sábados, domingos ni festivos), primero en conciliación, que para el reloj. Reclamar dinero, 1 año; igualdad salarial, 3 años.<br><strong>Paro:</strong> cuánto y cuánto tiempo, en «Nómina y Seguridad Social».</div>
 ` },
 
   { asig: "IPE1", seccion: "Contrato y convenio", tema: "Condiciones", titulo: "Convenio, representantes y huelga", html: r`
-<div class="note"><strong>Convenio colectivo:</strong> lo pactan empresa y representantes para un sector, zona o empresa. Mira salario, jornada, categorías y preaviso. Búscalo en el BOE, en el boletín autonómico o provincial, o en REGCON.<br><strong>Representantes:</strong> de 11 a 30, un delegado de personal; de 31 a 49, tres. Desde 50, comité: 5 (hasta 100), 9 (hasta 250), 13 (hasta 500), 17 (hasta 750), 21 (hasta 1000).<br><strong>Huelga:</strong> derecho fundamental. Aviso de 5 días naturales (10 en servicios públicos); no se cobra. Ilegal si es solo política, de solidaridad sin interés propio o para cambiar un convenio en vigor; abusivas, la rotatoria, la estratégica y la de celo.<br><strong>Cierre patronal:</strong> solo por violencia, ocupación o si no se puede trabajar.<br><strong>Control:</strong> cámaras sin sonido e informando; registros con respeto y un testigo.</div>
+<div class="note"><strong>Convenio colectivo:</strong> lo pactan empresa y representantes para un sector, zona o empresa. Mira salario, jornada, categorías y preaviso. Al caducar sigue mientras se negocia, salvo pacto. El de empresa manda sobre el del sector en horario, turnos u horas extra, pero no en el sueldo. Búscalo en el BOE, en el boletín autonómico o provincial, o en REGCON.<br><strong>Representantes:</strong> de 6 a 10, uno si lo vota la mayoría; de 11 a 30, un delegado de personal; de 31 a 49, tres. Desde 50, comité: 5 (hasta 100), 9 (hasta 250), 13 (hasta 500), 17 (hasta 750), 21 (hasta 1000).<br><strong>Huelga:</strong> derecho fundamental. La convocan los representantes, o la plantilla en votación si lo pide el 25 %. Aviso de 5 días naturales (10 en servicios públicos); no se cobra. Ilegal si es solo política, de solidaridad sin interés propio o para cambiar un convenio en vigor; abusivas, la rotatoria, la estratégica y la de celo.<br><strong>Cierre patronal:</strong> solo por violencia, ocupación o si no se puede trabajar.<br><strong>Control:</strong> cámaras avisando antes y nunca en vestuarios, aseos o comedores; sonido, solo si hay un riesgo relevante. Registros con respeto, en horas de trabajo y con un testigo. Hay derecho a la desconexión digital (LO 3/2018).</div>
 ` },
 
   { asig: "IPE1", seccion: "Nómina y Seguridad Social", tema: "Salario", titulo: "Partes de la nómina y protección del salario", html: r`
@@ -1331,7 +1392,7 @@ Para eliminar filas completas de una tabla se utiliza <code>DELETE FROM</code>. 
 <tr><td>Deducciones</td><td>Seguridad Social, IRPF, anticipos</td></tr>
 <tr><td>Líquido</td><td>Devengos menos deducciones</td></tr>
 <tr><td>Bases</td><td>De cotización y del IRPF</td></tr>
-</table><div class="note"><strong>SMI de 2026</strong> (RD 126/2026): 1.221 € al mes en 14 pagas; 1.424,50 € con las extras prorrateadas; 17.094 € al año. Cambia cada año.<br><strong>Protección:</strong> 10 % anual de interés si pagan tarde; <strong>FOGASA</strong> si la empresa es insolvente, con topes; preferencia de cobro.<br><strong>Embargo:</strong> el primer SMI, nada; el segundo, 30 %; el tercero, 50; el cuarto, 60; el quinto, 75; el resto, 90.</div>
+</table><div class="note"><strong>SMI de 2026</strong> (RD 126/2026): 1.221 € al mes en 14 pagas; 1.424,50 € con las extras prorrateadas; 17.094 € al año.<br><strong>SMI de 2027</strong> (RD 1013/2026), desde el 1 de enero: 1.286 € en 14 pagas; 1.500,33 € con las extras prorrateadas; 18.004 € al año.<br><strong>Pago:</strong> como mucho cada mes y con recibo. Puedes pedir un anticipo de lo ya trabajado. Dos pagas extra, una en Navidad.<br><strong>Protección:</strong> 10 % de interés si pagan tarde, preferencia de cobro y <strong>FOGASA</strong> si la empresa es insolvente: salarios, hasta 120 días y el doble del SMI diario; indemnizaciones, hasta un año.<br><strong>Embargo:</strong> el primer SMI, nada; el segundo, 30 %; el tercero, 50; el cuarto, 60; el quinto, 75; el resto, 90. Con 2.000 € netos y extras prorrateadas en 2026: 30 % de (2.000 − 1.424,50) = <strong>172,65 €</strong>.</div>
 ` },
 
   { asig: "IPE1", seccion: "Nómina y Seguridad Social", tema: "Salario", titulo: "Cotización y nómina de ejemplo", html: r`
@@ -1339,12 +1400,12 @@ Para eliminar filas completas de una tabla se utiliza <code>DELETE FROM</code>. 
 <tr><th>2026</th><th>Tú</th><th>Empresa</th><th>Sobre</th></tr>
 <tr><td>Contingencias comunes</td><td>4,70 %</td><td>23,60 %</td><td>BCC</td></tr>
 <tr><td>MEI</td><td>0,15 %</td><td>0,75 %</td><td>BCC</td></tr>
-<tr><td>Desempleo, indefinido</td><td>1,55 %</td><td>5,50 %</td><td>BCP</td></tr>
-<tr><td>Desempleo, temporal</td><td>1,60 %</td><td>6,70 %</td><td>BCP</td></tr>
+<tr><td>Desempleo: indefinido, formativo o sustitución</td><td>1,55 %</td><td>5,50 %</td><td>BCP</td></tr>
+<tr><td>Desempleo: resto de temporales</td><td>1,60 %</td><td>6,70 %</td><td>BCP</td></tr>
 <tr><td>Formación profesional</td><td>0,10 %</td><td>0,60 %</td><td>BCP</td></tr>
 <tr><td>FOGASA</td><td></td><td>0,20 %</td><td>BCP</td></tr>
 <tr><td>Horas extra (fuerza mayor)</td><td>4,70 % (2 %)</td><td>23,60 % (12 %)</td><td>Su importe</td></tr>
-</table><div class="note"><strong>BCC</strong> = salario base + complementos + parte mensual de las extras, sin horas extra.<br><strong>BCP</strong> = BCC + horas extra. La empresa paga además accidentes, según la actividad.<br>Tope máximo en 2026: 5.101,20 € al mes; el mínimo es el SMI con extras prorrateadas.</div>
+</table><div class="note"><strong>BCC</strong> = salario base + complementos + parte mensual de las extras, sin horas extra.<br><strong>BCP</strong> = BCC + horas extra. La empresa paga además accidentes, según la actividad.<br><strong>Bases de 2026</strong> (Orden PJC/297/2026): máxima, 5.101,20 € al mes. Mínima por grupo: 1.989,30 (1, licenciados e ingenieros), 1.649,70 (2, titulados medios), 1.435,20 (3, jefes) y 1.424,40 (4 a 11).<br><strong>Solidaridad:</strong> lo que pasa de la máxima paga del 1,15 al 1,46 %, casi todo la empresa.</div>
 <div class="callout ct"><span class="ci2">🧮</span><div><strong>1.500 € de base, 2 extras de 1.500, indefinido, IRPF del 10 %.</strong><br>BCC = BCP = 1.500 + 3.000 ÷ 12 = <strong>1.750 €</strong><br>Comunes y MEI (4,85 %): 84,88. Desempleo: 27,13. FP: 1,75.<br>IRPF: 10 % de 1.500 = 150,00.<br>Deducciones: 263,76. <strong>Líquido: 1.500 − 263,76 = 1.236,24 €</strong></div></div>
 ` },
 
@@ -1352,14 +1413,26 @@ Para eliminar filas completas de una tabla se utiliza <code>DELETE FROM</code>. 
 <div class="note"><strong>Contributiva:</strong> por lo que has cotizado. <strong>No contributiva:</strong> sin cotización suficiente y con pocos ingresos.<br>La empresa se inscribe, te afilia (una vez en la vida), te da de alta y baja, y cotiza. <strong>Regímenes:</strong> general y especiales (autónomos, mar, minería del carbón).</div>
 <table class="dt">
 <tr><th>Prestación</th><th>Qué da</th></tr>
-<tr><td>Baja por enfermedad común o accidente no laboral</td><td>Días 1 a 3, nada; 4 a 20, 60 %; desde el 21, 75 %. Hasta el 15 paga la empresa. La enfermedad común pide 180 días cotizados en 5 años</td></tr>
+<tr><td>Baja por enfermedad común o accidente no laboral</td><td>Días 1 a 3, nada; 4 a 20, 60 %; desde el 21, 75 %. Hasta el 15 paga la empresa. La enfermedad común pide 180 días cotizados en 5 años. Desde el 1-12-2026 se calcula con la base de dos meses antes; hasta entonces, con la del mes anterior</td></tr>
+<tr><td>Bajas especiales (regla incapacitante, aborto, menopausia, violencia de género, semana 39, donar órganos)</td><td>Desde el 1-12-2026: el primer día, salario completo; desde el siguiente, lo paga la Seguridad Social. Donantes, 100 %. Sin mínimo cotizado, salvo la semana 39</td></tr>
 <tr><td>Baja por accidente de trabajo o enfermedad profesional</td><td>75 % desde el día siguiente; el primero, salario completo</td></tr>
-<tr><td>Duración de la baja</td><td>12 meses, más 6 si se espera que cures</td></tr>
-<tr><td>Nacimiento y cuidado</td><td>100 %. 19 semanas por progenitor (32 si es uno solo): 6 obligatorias, 11 en el primer año y 2 hasta los 8 años</td></tr>
+<tr><td>Duración de la baja</td><td>365 días, más 180 si se espera que cures</td></tr>
+<tr><td>Nacimiento y cuidado</td><td>100 %. Si nace desde el 26-11-2026, 20 semanas por progenitor (34 si es uno solo): 6 obligatorias, 11 en el primer año y 3 hasta los 8 años; la semana nueva se pide desde el 1-3-2027. Antes, 19 (32). Cotizado: nada con menos de 21 años; 90 días en 7 años de 21 a 25; 180 desde los 26 (o 180 y 360 en toda la vida)</td></tr>
 <tr><td>Incapacidad permanente</td><td>Parcial: 24 mensualidades. Total: 55 %. Absoluta: 100 %. Gran incapacidad (antes gran invalidez): más un complemento</td></tr>
-<tr><td>Jubilación ordinaria en 2026</td><td>65 años con 38 años y 3 meses cotizados; si no, 66 y 10 meses. En 2027, 67. Mínimo, 15 años cotizados</td></tr>
-<tr><td>Viudedad y orfandad</td><td>52 % y 20 %, en general</td></tr>
+<tr><td>Jubilación ordinaria en 2026</td><td>65 años con 38 años y 3 meses cotizados; si no, 66 y 10 meses. En 2027, 65 con 38 y 6 meses, o 67. Mínimo, 15 años cotizados (50 % de la base); el 100 %, con 36 y medio (37 desde 2027)</td></tr>
+<tr><td>Viudedad y orfandad</td><td>52 % y 20 %, en general. Orfandad hasta los 21, o los 25 si no trabaja o gana menos del SMI</td></tr>
 </table><div class="callout ct"><span class="ci2">🧮</span><div><strong>25 días de gripe con una base de 1.650 €:</strong> 1.650 ÷ 30 = 55 € al día. 3 días a 0, 17 días a 33 € (561) y 5 a 41,25 € (206,25): <strong>767,25 €</strong>.</div></div>
+` },
+
+  { asig: "IPE1", seccion: "Nómina y Seguridad Social", tema: "Seguridad Social", titulo: "Paro: cuánto y cuánto tiempo", html: r`
+<div class="note"><strong>Para cobrarlo:</strong> 360 días cotizados en los últimos 6 años, no haberlo dejado tú, estar inscrito y disponible. Se pide en 15 días hábiles; si tardas, pierdes días. Las vacaciones sin disfrutar retrasan el inicio.<br><strong>Cuánto tiempo:</strong> con 360 días cotizados, 120 de paro. Por cada 180 más, otros 60: 540 → 180, 720 → 240, 1.080 → 360… hasta 2.160 → 720.<br><strong>Cuánto:</strong> 70 % los primeros 180 días y 60 % después, de la media cotizada en los últimos 180 días, sin horas extra.</div>
+<table class="dt">
+<tr><th>Al mes, jornada completa</th><th>Mínimo</th><th>Máximo</th></tr>
+<tr><td>Sin hijos</td><td>560 €</td><td>1.225 €</td></tr>
+<tr><td>Un hijo</td><td>749 €</td><td>1.400 €</td></tr>
+<tr><td>Dos o más</td><td>749 €</td><td>1.575 €</td></tr>
+</table><div class="note">Con el IPREM de 600 € de los Presupuestos de 2023, prorrogados.<br><strong>Subsidio</strong>, sin rentas o con responsabilidades familiares: con 90 días cotizados, 3 meses; 120, 4; 150, 5; 180, 6 (21 con responsabilidades). Son 570 € los primeros 180 días, 540 hasta el 360 y 480 después.</div>
+<div class="callout ct"><span class="ci2">🧮</span><div><strong>2 años trabajados (730 días), base media de 1.650 € y sin hijos:</strong> 240 días de paro. Los 180 primeros, 70 % = <strong>1.155 € al mes</strong>; los 60 últimos, 60 % = <strong>990 €</strong>.</div></div>
 ` },
 
   { asig: "IPE1", seccion: "Orientación y empleo", tema: "El sector", titulo: "Salidas de ASIR", html: r`
@@ -1382,7 +1455,7 @@ Para eliminar filas completas de una tabla se utiliza <code>DELETE FROM</code>. 
 ` },
 
   { asig: "IPE1", seccion: "Orientación y empleo", tema: "Tu plan", titulo: "CV, correo, pitch y entrevista", html: r`
-<div class="note"><strong>CV:</strong> una página, dos como mucho, lo último primero y adaptado a la oferta. Enlaza GitHub o LinkedIn. Sin DNI ni estado civil.<br><strong>Correo:</strong> asunto claro, saludo, quién eres, qué aportas, por qué esa empresa, qué pides y despedida. Repasa las faltas y usa una dirección seria.<br><strong>Elevator pitch</strong> (30 segundos a 2 minutos): quién eres, un logro, por qué te interesan y despedida.<br><strong>Entrevista:</strong> investiga la empresa, prepara ejemplos reales (situación, tarea, acción y resultado) y lleva preguntas.<br><strong>Dónde buscar:</strong> LinkedIn, InfoJobs, SEPE y servicio autonómico, webs de empresas, ferias, contactos y las prácticas.</div>
+<div class="note"><strong>CV:</strong> una página, dos como mucho, lo último primero y adaptado a la oferta. Enlaza GitHub o LinkedIn. Sin DNI ni estado civil.<br><strong>Correo:</strong> asunto claro, saludo, quién eres, qué aportas, por qué esa empresa, qué pides y despedida. Repasa las faltas y usa una dirección seria.<br><strong>Elevator pitch</strong> (30 segundos a 2 minutos): quién eres, un logro, por qué te interesan y despedida.<br><strong>Entrevista:</strong> investiga la empresa, prepara ejemplos reales (situación, tarea, acción y resultado) y lleva preguntas.<br><strong>La oferta</strong> debe decir el sueldo inicial y el convenio, y no pueden preguntarte cuánto cobrabas (desde el 19-11-2026; Ley 3/2023, art. 5).<br><strong>Dónde buscar:</strong> LinkedIn, InfoJobs, SEPE y servicio autonómico, webs de empresas, ferias, contactos y las prácticas.</div>
 ` },
 
   { asig: "IPE1", seccion: "Orientación y empleo", tema: "Aprender por tu cuenta", titulo: "Empleabilidad, identidad digital y PLE", html: r`
